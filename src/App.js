@@ -52,7 +52,6 @@ function App() {
 					<img src={image} width="40px" alt="logo"></img>
 				</button>
 			</div>
-
 			<div>
 				{myRecipes.map((element) => (
 					<MyRecipesComponent

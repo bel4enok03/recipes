@@ -10,8 +10,8 @@ function MyRecipesComponent({ label, image, calories, ingredients }) {
 				<img src={image} alt='food'></img>
 			</div>
 			<ul className="list">
-				{ingredients.map((ingredient) => (
-					<li><img src={icon} width='30px' alt='icon'/>{ingredient}</li>
+				{ingredients.map((ingredient, index) => (
+					<li key={index}><img src={icon} width='30px' alt='icon'/>{ingredient}</li>
 				))}
 			</ul>
 			<div className="container">
